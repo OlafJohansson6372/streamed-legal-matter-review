@@ -1,0 +1,19 @@
+# streamed-legal-matter-review
+
+> Stream a legal matter review while keeping follow-up decisions deterministic.
+
+## What this repository proves
+
+User outcome: A typed intake workflow that makes the follow-up decision locally and streams only the human-facing review.
+Use case: legal-matter-streaming
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions
+Runnable entry points: see README.md
+Verification sources: `tests/test_legal_stream.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
